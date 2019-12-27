@@ -612,6 +612,7 @@ public class JmolPanel extends JPanel implements SplashInterface, JsonNioClient 
     }
   }
 
+  //aksenov removed exit
   protected boolean doClose(boolean saveSize) {
     if (numWindows == 1
         && vwr.ms.ac > 0)
