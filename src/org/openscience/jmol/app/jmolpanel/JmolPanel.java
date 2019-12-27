@@ -614,9 +614,7 @@ public class JmolPanel extends JPanel implements SplashInterface, JsonNioClient 
 
   protected boolean doClose(boolean saveSize) {
     if (numWindows == 1
-        && vwr.ms.ac > 0
-        && JOptionPane.showConfirmDialog(frame, GT.$("Exit Jmol?"), "Exit",
-            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE) != JOptionPane.YES_OPTION)
+        && vwr.ms.ac > 0)
       return false;
     dispose(frame, saveSize);
     return true;
